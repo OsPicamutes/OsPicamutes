@@ -1,0 +1,496 @@
+/*-----------------------------------------------
+Estililzações para imagem do ônibus e poltronas
+-----------------------------------------------*/
+
+.card-onibus {
+    background: rgba(0,0,0,0);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0);
+}
+
+.float-left {
+    float: left;
+    margin: 1px auto;
+}
+
+.form-onibus {
+    margin-top: 30px;
+}
+
+.status-onibus {
+    background: #e5e5e5;
+    display: flex;
+    padding: 1px 4px;
+    width: 320px;
+    font-size: 11px;
+    text-align: center;
+    border: 1px solid #cacaca;
+    border-radius: 7px;
+    position: absolute;
+    top: 46%;
+    left: 38%;
+}
+
+.status-onibus div div {
+width: 17px;height: 17px;background-color: green;border-radius: 50%;float: left;margin-right: 7px;
+}
+
+.status-onibus .livre {
+    background: #4caf50;
+}
+
+.status-onibus .ocupado {
+    background: #F44336;
+}
+
+.status-onibus .reservado {
+    background: #ffff00;
+}
+
+.onibusCSS div .numero-poltrona {
+    font-size: 15px;
+    font-weight: 600;
+}
+.onibusCSS div .sexo-poltrona {
+    background: rgba(0, 0, 0, 0.15);
+    padding: 0px 5px;
+    font-size: 9px;
+    color: #dadada;
+    border-radius: 3px;
+}
+.onibusCSS div .text-poltrona {
+    font-size: 11px;
+}
+
+.poltrona-filheira-1,
+.poltrona-filheira-2,
+.poltrona-filheira-3,
+.poltrona-filheira-4 {
+    width: 5.051%;
+    height: 15.945%;
+    background-color: #4caf50;
+    position: absolute;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.poltrona-filheira-1 {
+    top: 4%;
+}
+.poltrona-filheira-2 {
+    top: 24%;
+}
+.poltrona-filheira-3 {
+    top: 60%;
+}
+.poltrona-filheira-4 {
+    top: 80%;
+}
+.poltrona-01,
+.poltrona-13,
+.poltrona-25,
+.poltrona-37 {
+    left: 16.9%;
+}
+.poltrona-02,
+.poltrona-14,
+.poltrona-26,
+.poltrona-38 {
+    left: 22.9%;
+}
+.poltrona-03,
+.poltrona-15,
+.poltrona-27,
+.poltrona-39 {
+    left: 28.9%;
+}
+.poltrona-04,
+.poltrona-16,
+.poltrona-28,
+.poltrona-40 {
+    left: 34.9%;
+}
+.poltrona-05,
+.poltrona-17,
+.poltrona-29,
+.poltrona-41 {
+    left: 40.9%;
+}
+.poltrona-06,
+.poltrona-18,
+.poltrona-30,
+.poltrona-42 {
+    left: 46.9%;
+}
+.poltrona-07,
+.poltrona-19,
+.poltrona-31,
+.poltrona-43 {
+    left: 52.9%;
+}
+.poltrona-08,
+.poltrona-20,
+.poltrona-32,
+.poltrona-44 {
+    left: 58.9%;
+}
+.poltrona-09,
+.poltrona-21,
+.poltrona-33,
+.poltrona-45 {
+    left: 64.9%;
+}
+.poltrona-10,
+.poltrona-22,
+.poltrona-34,
+.poltrona-46 {
+    left: 70.9%;
+}
+.poltrona-11,
+.poltrona-23,
+.poltrona-35,
+.poltrona-47 {
+    left: 76.9%;
+}
+.poltrona-12,
+.poltrona-24,
+.poltrona-36,
+.poltrona-48 {
+    left: 82.9%;
+}
+
+@media (max-width: 1024px) {
+    .poltrona-filheira-1,
+    .poltrona-filheira-2,
+    .poltrona-filheira-3,
+    .poltrona-filheira-4 {
+        width: 5%;
+        height: 15.605%;
+    }
+
+
+}
+
+@media (max-width: 992px) {
+
+    .status-onibus {
+    background: #e5e5e5;
+     display: block; 
+     font-size: 10px;
+    
+    width: 85px;
+    text-align: center;
+    border: 1px solid #cacaca;
+    border-radius: 7px;
+    position: absolute;
+    top: 7.2%;
+    left: 48%;
+}
+
+    .status-onibus div div {
+        width: 14px;
+        height: 14px;
+    }
+
+    .form-onibus {
+        position: fixed;
+        width: 35%;
+        display: inline-grid;
+    }
+    .form-onibus div {
+        width: 100%;
+    }
+
+        .poltrona-filheira-1,
+    .poltrona-filheira-2,
+    .poltrona-filheira-3,
+    .poltrona-filheira-4 {
+        height: 4.551%;
+        width: 13.945%;
+        background-color: #4caf50;
+        position: absolute;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+    }
+
+    .poltrona-filheira-1 {
+        left: 76.9%;
+    }
+    .poltrona-filheira-2 {
+        left: 59.9%;
+    }
+    .poltrona-filheira-3 {
+        left: 25.9%;
+    }
+    .poltrona-filheira-4 {
+        left: 8.9%
+    }
+    .poltrona-01,
+    .poltrona-13,
+    .poltrona-25,
+    .poltrona-37 {
+        top: 16.9%;
+    }
+    .poltrona-02,
+    .poltrona-14,
+    .poltrona-26,
+    .poltrona-38 {
+        top: 22.9%;
+    }
+    .poltrona-03,
+    .poltrona-15,
+    .poltrona-27,
+    .poltrona-39 {
+        top: 28.9%;
+    }
+    .poltrona-04,
+    .poltrona-16,
+    .poltrona-28,
+    .poltrona-40 {
+        top: 34.9%;
+    }
+    .poltrona-05,
+    .poltrona-17,
+    .poltrona-29,
+    .poltrona-41 {
+        top: 40.9%;
+    }
+    .poltrona-06,
+    .poltrona-18,
+    .poltrona-30,
+    .poltrona-42 {
+        top: 46.9%;
+    }
+    .poltrona-07,
+    .poltrona-19,
+    .poltrona-31,
+    .poltrona-43 {
+        top: 52.9%;
+    }
+    .poltrona-08,
+    .poltrona-20,
+    .poltrona-32,
+    .poltrona-44 {
+        top: 58.9%;
+    }
+    .poltrona-09,
+    .poltrona-21,
+    .poltrona-33,
+    .poltrona-45 {
+        top: 64.9%;
+    }
+    .poltrona-10,
+    .poltrona-22,
+    .poltrona-34,
+    .poltrona-46 {
+        top: 70.9%;
+    }
+    .poltrona-11,
+    .poltrona-23,
+    .poltrona-35,
+    .poltrona-47 {
+        top: 76.9%;
+    }
+    .poltrona-12,
+    .poltrona-24,
+    .poltrona-36,
+    .poltrona-48 {
+        top: 82.9%;
+    }
+}
+
+@media (max-width: 870px) {
+
+    .onibusCSS div .numero-poltrona {
+        font-size: 10px;
+        font-weight: 800;
+    }
+}
+/*------------------------- Tamanho 767px ------------------------*/
+@media (max-width: 767px) {
+
+    .onibusCSS div .sexo-poltrona {
+        font-size: 12px
+    }
+
+    .onibusCSS div .numero-poltrona {
+        font-size: 18px
+    }
+
+.status-onibus {
+    background: #e5e5e5;
+    display: block;
+    font-size: 14px;
+    padding: 6px;
+    width: 140px;
+    text-align: center;
+    border: 1px solid #cacaca;
+    border-radius: 7px;
+    position: absolute;
+    top: 7.5%;
+    left: 48%;
+}
+
+    .status-onibus div div {
+    width: 20px;
+    height: 20px;
+}
+
+    .form-onibus {
+        position: inherit;
+        /*right: inherit;*/
+        width: 100%;
+        display: block;
+    }
+
+    .poltrona-filheira-1,
+    .poltrona-filheira-2,
+    .poltrona-filheira-3,
+    .poltrona-filheira-4 {
+        height: 5.051%;
+        width: 15.945%;
+        background-color: #4caf50;
+        position: absolute;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+    }
+
+    .poltrona-filheira-1 {
+        left: 76.9%;
+    }
+    .poltrona-filheira-2 {
+        left: 58.9%;
+    }
+    .poltrona-filheira-3 {
+        left: 25.9%;
+    }
+    .poltrona-filheira-4 {
+        left: 6.9%
+    }
+    .poltrona-01,
+    .poltrona-13,
+    .poltrona-25,
+    .poltrona-37 {
+        top: 16.9%;
+    }
+    .poltrona-02,
+    .poltrona-14,
+    .poltrona-26,
+    .poltrona-38 {
+        top: 22.9%;
+    }
+    .poltrona-03,
+    .poltrona-15,
+    .poltrona-27,
+    .poltrona-39 {
+        top: 28.9%;
+    }
+    .poltrona-04,
+    .poltrona-16,
+    .poltrona-28,
+    .poltrona-40 {
+        top: 34.9%;
+    }
+    .poltrona-05,
+    .poltrona-17,
+    .poltrona-29,
+    .poltrona-41 {
+        top: 40.9%;
+    }
+    .poltrona-06,
+    .poltrona-18,
+    .poltrona-30,
+    .poltrona-42 {
+        top: 46.9%;
+    }
+    .poltrona-07,
+    .poltrona-19,
+    .poltrona-31,
+    .poltrona-43 {
+        top: 52.9%;
+    }
+    .poltrona-08,
+    .poltrona-20,
+    .poltrona-32,
+    .poltrona-44 {
+        top: 58.9%;
+    }
+    .poltrona-09,
+    .poltrona-21,
+    .poltrona-33,
+    .poltrona-45 {
+        top: 64.9%;
+    }
+    .poltrona-10,
+    .poltrona-22,
+    .poltrona-34,
+    .poltrona-46 {
+        top: 70.9%;
+    }
+    .poltrona-11,
+    .poltrona-23,
+    .poltrona-35,
+    .poltrona-47 {
+        top: 76.9%;
+    }
+    .poltrona-12,
+    .poltrona-24,
+    .poltrona-36,
+    .poltrona-48 {
+        top: 82.9%;
+    }
+}
+
+/*------------------------- Tamanho 767px ------------------------*/
+@media (max-width: 490px) {
+
+.status-onibus {
+    width: 110px;
+    padding: 2px;
+    font-size: 12px
+}
+
+.status-onibus div div {
+    width: 14px;
+    height: 14px;
+}
+
+    .form-onibus {
+        position: inherit;
+        /*right: inherit;*/
+        width: 100%;
+        display: block;
+    }
+
+    .poltrona-filheira-1,
+    .poltrona-filheira-2,
+    .poltrona-filheira-3,
+    .poltrona-filheira-4 {
+        height: 4.751%;
+        width: 13.945%;
+    }
+
+    .poltrona-filheira-1 {
+        left: 76.9%;
+    }
+    .poltrona-filheira-2 {
+        left: 58.9%;
+    }
+    .poltrona-filheira-3 {
+        left: 25.9%;
+    }
+    .poltrona-filheira-4 {
+        left: 8.9%
+    }
+}

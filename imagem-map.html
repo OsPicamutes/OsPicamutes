@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/mod.css">
+    <link rel="stylesheet" type="text/css" href="css/bus.css">
+    <link rel="stylesheet" type="text/css" href="css/ticket.css">
+    <title>Innove Ticket</title>
+
+</head>
+
+<body class="sidebar-mini fixed">
+    <div class="wrapper">
+        <!-- Navbar-->
+        <header class="main-header hidden-print"><a href="index.html" class="logo">Innove Boss</a>
+            <nav class="navbar navbar-static-top sombra">
+                <!-- Sidebar toggle button-->
+                <a href="#" data-toggle="offcanvas" class="sidebar-toggle"></a>
+                <!-- Navbar Right Menu--><img src="images/innove.svg" height="46" class="logo-innove" alt="Innove Logo">
+                <div class="navbar-custom-menu">
+                    <ul class="top-nav">
+                        <!--Notification Menu-->
+                        <li class="dropdown notification-menu"><a href="#" data-toggle="dropdown" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-bell-o fa-lg"></i></a>
+                            <ul class="dropdown-menu">
+                                <li class="not-head">Suas notificações</li>
+                                <li>
+                                    <a href="javascript:;" class="media">
+                                        <div class="media-body">
+                                            <span class="block">Novas leis</span>
+                                            <span class="text-muted block">2 min atrás</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="not-footer"><a href="#">Ver todas notificações</a></li>
+                            </ul>
+                        </li>
+                        <!--Ajuda Menu-->
+                        <li class="dropdown notification-menu"><a href="#" data-toggle="dropdown" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-question fa-lg"></i></a>
+                            <ul class="dropdown-menu">
+                                <li class="not-head">Ajuda</li>
+                                <li>
+                                    <div class="media-body">
+                                        <span class="botao-ajuda"><a href="#">Sobre</a></span>
+                                        <span class="botao-ajuda"><a href="#">Suporte</a></span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- Side-Nav-->
+        <aside class="main-sidebar hidden-print sidebar-rolagem">
+            <div class="teste">
+                <section class="sidebar sidebar-nav" style="overflow: visible;">
+                    <div class="user-panel">
+                        <div class="pull-left image"><img src="images/logo.svg" alt="User Image" class="img-circle"></div>
+                        <div class="pull-left info">
+                            <p>Usuario Tal</p>
+                            <p class="designation">Empresa Tal</p>
+                        </div>
+                    </div>
+                    <!-- Sidebar Menu-->
+                    <ul class="sidebar-menu ul-menu">
+                        <li>
+                            <a class="button-flyout">
+                                <i class="fa fa-cart-plus"></i>
+                                <span>Vendas</span>
+                            </a>
+                        </li>
+                        <li><a href="caixa.php"><i class="fa fa-shopping-basket"></i><span>Caixa</span></a></li>
+                    </ul>
+                    <ul id="lista" class="nav-flyout sidebar-menu">
+                        <li>
+                            <a href="">
+                                <i class="fa fa-clipboard"></i>
+                                <span>Casa</span>
+                            </a>
+                        </li>
+                        <button class="button-flyout" id="voltar">
+                            <i class="fa fa-chevron-left" aria-hidden="true" style="float: left;padding: 4px;padding-left: 11px;margin-right:11px"></i>
+                            <span>Voltar</span>
+                        </button>
+                    </ul>
+                </section>
+                <footer class="footer-dash">
+                    <p class="footer-direitos">2016 © <span>Millennium</span></p>
+                </footer>
+            </div>
+        </aside>
+        <div class="content-wrapper">
+            <div class="row mt-20">
+                    <div class="col-md-12">
+                        <div class="card card-onibus">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="user_info">
+                                           <!--  <p>0025, Paulo Cesar Mariano Neto, 22/07/2017 as 11:28</p> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+<!--                                     <div class="col-sm-12">
+                                        <div class="row">
+                                            <div class="status-onibus">
+                                                <div class="float-left">
+                                                    <div class="livre"></div>
+                                                    <span>Livre</span>
+                                                </div>
+                                                <div class="float-left">
+                                                    <div class="ocupado"></div>
+                                                    <span>Ocupado</span>
+                                                </div>
+                                                <div class="float-left">
+                                                    <div class="reservado"></div>
+                                                    <span>Reservado</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> -->
+                                    <div class="col-sm-6 col-md-12 col-lg-12">
+                                        <div class="onibusCSS text-center">
+                                            <img src="images/onibus.png" class="img-responsive visible-md visible-lg" id="mapa" alt="onibus" usemap="#mapa_onibus" style="">
+                                            <img src="images/onibus-vertical.png" class="img-responsive visible-xs visible-sm" id="mapa" alt="onibus" usemap="#mapa_onibus" style="">
+                                            <div class="status-onibus">
+                                                <div class="float-left">
+                                                    <div class="livre"></div>
+                                                    <span>Livre</span>
+                                                </div>
+                                                <div class="float-left">
+                                                    <div class="ocupado"></div>
+                                                    <span>Ocupado</span>
+                                                </div>
+                                                <div class="float-left">
+                                                    <div class="reservado"></div>
+                                                    <span>Reservado</span>
+                                                </div>
+                                            </div>
+                                            <div class="poltrona-filheira-1 poltrona-01">
+                                                <div>
+                                                    <span class="numero-poltrona">01</span><br>
+                                                    <span class="text-poltrona visible-lg">Poltrona</span>
+                                                    <span class="sexo-poltrona">F</span>
+                                                </div>
+                                            </div>
+                                            <div class="poltrona-filheira-1 poltrona-02">
+                                                <div>
+                                                    <span class="numero-poltrona">02</span><br>
+                                                    <span class="text-poltrona visible-lg">Poltrona</span>
+                                                    <span class="sexo-poltrona">F</span>
+                                                </div>
+                                            </div>
+                                            <div class="poltrona-filheira-1 poltrona-03">
+                                                <div>
+                                                    <span class="numero-poltrona">03</span><br>
+                                                    <span class="text-poltrona visible-lg">Poltrona</span>
+                                                    <span class="sexo-poltrona">F</span>
+                                                </div>
+                                            </div>
+                                            <div class="poltrona-filheira-1 poltrona-04">
+                                                <div>
+                                                    <span class="numero-poltrona">04</span><br>
+                                                    <span class="text-poltrona visible-lg">Poltrona</span>
+                                                    <span class="sexo-poltrona">F</span>
+                                                </div>
+                                            </div>
+                                            <div class="poltrona-filheira-1 poltrona-05">
+                                                <div>
+                                                    <span class="numero-poltrona">05</span><br>
+                                                    <span class="text-poltrona visible-lg">Poltrona</span>
+                                                    <span class="sexo-poltrona">F</span>
+                                                </div>
+                                            </div>
+                                            <div class="poltrona-filheira-1 poltrona-06">
+                                                <div>
+                                                    <span class="numero-poltrona">06</span><br>
+                                                    <span class="text-poltrona visible-lg">Poltrona</span>
+                                                    <span class="sexo-poltrona">F</span>
+                                                </div>
+                                            </div>
+                                            <div class="poltrona-filheira-1 poltrona-07">
+                                                <div>
+                                                    <span class="numero-poltrona">07</span><br>
+                                                    <span class="text-poltrona visible-lg">Poltrona</span>
+                                                    <span class="sexo-poltrona">F</span>
+                                                </div>
+                                            </div>
+                                            <div class="poltrona-filheira-1 poltrona-08">
+                                                <div>
+                                                    <span class="numero-poltrona">08</span><br>
+                                                    <span class="text-poltrona visible-lg">Poltrona</span>
+                                                    <span class="sexo-poltrona">F</span>
+                                                </div>
+                                            </div>
+                                            <div class="poltrona-filheira-1 poltrona-09">
+                                                <div>
+                                                    <span class="numero-poltrona">09</span><br>
+                                                    <span class="text-poltrona visible-lg">Poltrona</span>
+                                                    <span class="sexo-poltrona">F</span>
+                                                </div>
+                                            </div>
+                                            <div class="poltrona-filheira-1 poltrona-10">
+                                                <div>
+                                                    <span class="numero-poltrona">10</span><br>
+                                                    <span class="text-poltrona visible-lg">Poltrona</span>
+                                                    <span class="sexo-poltrona">F</span>
+                                                </div>
+                                            </div>
+                                            <div class="poltrona-filheira-1 poltrona-11">
+                                                <div>
+                                                    <span class="numero-poltrona">11</span><br>
+                                                    <span class="text-poltrona visible-lg">Poltrona</span>
+                                                    <span class="sexo-poltrona">F</span>
+                                                </div>
+                                            </div>
+                                            <div class="poltrona-filheira-1 poltrona-12">
+                                                <div>
+                                                    <span class="numero-poltrona">12</span><br>
+                                                    <span class="text-poltrona visible-lg">Poltrona</span>
+                                                    <span class="sexo-poltrona">F</span>
+                                                </div>
+                                            </div>
+                                            <div class="poltrona-filheira-2 poltrona-13">
+                                                <div>
+                                                    <span class="numero-poltrona">13</span><br>
+                                                    <span class="text-poltrona visible-lg">Poltrona</span>
+                                                    <span class="sexo-poltrona">F</span>
+                                                </div>
+                                            </div>
+                                            <div class="poltrona-filheira-2 poltrona-14">
+                                                <div>
+                                                    <span class="numero-poltrona">14</span><br>
+                                                    <span class="text-poltrona visible-lg">Poltrona</span>
+                                                    <span class="sexo-poltrona">F</span>
+                                                </div>
+                                            </div>
+                                            <div class="poltrona-filheira-2 poltrona-15">
+                                                <div>
+                                                    <span class="numero-poltrona">15</span><br>
+                                                    <span class="text-poltrona visible-lg">Poltrona</span>
+                                                    <span class="sexo-poltrona">F</span>
+                                                </div>
+                                            </div>
+                                            <div class="poltrona-filheira-2 poltrona-16">
+                                                <div>
+                                                    <span class="numero-poltrona">16</span><br>
+                                                    <span class="text-poltrona visible-lg">Poltrona</span>
+                                                    <span class="sexo-poltrona">F</span>
+                                                </div>
+                                            </div>
+                                            <div class="poltrona-filheira-2 poltrona-17">
+                                                <div>
+                                                    <span class="numero-poltrona">17</span><br>
+                                                    <span class="text-poltrona visible-lg">Poltrona</span>
+                                                    <span class="sexo-poltrona">F</span>
+                                                </div>
+                                            </div>
+                                            <div class="poltrona-filheira-2 poltrona-18">
+                                                <div>
+                                                    <span class="numero-poltrona">18</span><br>
+                                                    <span class="text-poltrona visible-lg">Poltrona</span>
+                                                    <span class="sexo-poltrona">F</span>
+                                                </div>
+                                            </div>
+                                            <div class="poltrona-filheira-2 poltrona-19">
+                                                <div>
+                                                    <span class="numero-poltrona">19</span><br>
+                                                    <span class="text-poltrona visible-lg">Poltrona</span>
+                                                    <span class="sexo-poltrona">F</span>
+                                                </div>
+                                            </div>
+                                            <div class="poltrona-filheira-2 poltrona-20">
+                                                <div>
+                                                    <span class="numero-poltrona">20</span><br>
+                                                    <span class="text-poltrona visible-lg">Poltrona</span>
+                                                    <span class="sexo-poltrona">F</span>
+                                                </div>
+                                            </div>
+                                            <div class="poltrona-filheira-2 poltrona-21">
+                                                <div>
+                                                    <span class="numero-poltrona">21</span><br>
+                                                    <span class="text-poltrona visible-lg">Poltrona</span>
+                                                    <span class="sexo-poltrona">F</span>
+                                                </div>
+                                            </div>
+                                            <div class="poltrona-filheira-2 poltrona-22">
+                                                <div>
+                                                    <span class="numero-poltrona">22</span><br>
+                                                    <span class="text-poltrona visible-lg">Poltrona</span>
+                                                    <span class="sexo-poltrona">F</span>
+                                                </div>
+                                            </div>
+                                            <div class="poltrona-filheira-2 poltrona-23">
+                                                <div>
+                                                    <span class="numero-poltrona">23</span><br>
+                                                    <span class="text-poltrona visible-lg">Poltrona</span>
+                                                    <span class="sexo-poltrona">F</span>
+                                                </div>
+                                            </div>
+                                            <div class="poltrona-filheira-2 poltrona-24">
+                                                <div>
+                                                    <span class="numero-poltrona">24</span><br>
+                                                    <span class="text-poltrona visible-lg">Poltrona</span>
+                                                    <span class="sexo-poltrona">F</span>
+                                                </div>
+                                            </div>
+                                            <div class="poltrona-filheira-3 poltrona-25">
+                                                <div>
+                                                    <span class="numero-poltrona">25</span><br>
+                                                    <span class="text-poltrona visible-lg">Poltrona</span>
+                                                    <span class="sexo-poltrona">F</span>
+                                                </div>
+                                            </div>
+                                            <div class="poltrona-filheira-3 poltrona-26">
+                                                <div>
+                                                    <span class="numero-poltrona">26</span><br>
+                                                    <span class="text-poltrona visible-lg">Poltrona</span>
+                                                    <span class="sexo-poltrona">F</span>
+                                                </div>
+                                            </div>
+                                            <div class="poltrona-filheira-3 poltrona-27">
+                                                <div>
+                                                    <span class="numero-poltrona">27</span><br>
+                                                    <span class="text-poltrona visible-lg">Poltrona</span>
+                                                    <span class="sexo-poltrona">F</span>
+                                                </div>
+                                            </div>
+                                            <div class="poltrona-filheira-3 poltrona-28">
+                                                <div>
+                                                    <span class="numero-poltrona">28</span><br>
+                                                    <span class="text-poltrona visible-lg">Poltrona</span>
+                                                    <span class="sexo-poltrona">F</span>
+                                                </div>
+                                            </div>
+                                            <div class="poltrona-filheira-3 poltrona-29">
+                                                <div>
+                                                    <span class="numero-poltrona">29</span><br>
+                                                    <span class="text-poltrona visible-lg">Poltrona</span>
+                                                    <span class="sexo-poltrona">F</span>
+                                                </div>
+                                            </div>
+                                            <div class="poltrona-filheira-3 poltrona-30">
+                                                <div>
+                                                    <span class="numero-poltrona">30</span><br>
+                                                    <span class="text-poltrona visible-lg">Poltrona</span>
+                                                    <span class="sexo-poltrona">F</span>
+                                                </div>
+                                            </div>
+                                            <div class="poltrona-filheira-3 poltrona-31">
+                                                <div>
+                                                    <span class="numero-poltrona">31</span><br>
+                                                    <span class="text-poltrona visible-lg">Poltrona</span>
+                                                    <span class="sexo-poltrona">F</span>
+                                                </div>
+                                            </div>
+                                            <div class="poltrona-filheira-3 poltrona-32">
+                                                <div>
+                                                    <span class="numero-poltrona">32</span><br>
+                                                    <span class="text-poltrona visible-lg">Poltrona</span>
+                                                    <span class="sexo-poltrona">F</span>
+                                                </div>
+                                            </div>
+                                            <div class="poltrona-filheira-3 poltrona-33">
+                                                <div>
+                                                    <span class="numero-poltrona">33</span><br>
+                                                    <span class="text-poltrona visible-lg">Poltrona</span>
+                                                    <span class="sexo-poltrona">F</span>
+                                                </div>
+                                            </div>
+                                            <div class="poltrona-filheira-3 poltrona-34">
+                                                <div>
+                                                    <span class="numero-poltrona">34</span><br>
+                                                    <span class="text-poltrona visible-lg">Poltrona</span>
+                                                    <span class="sexo-poltrona">F</span>
+                                                </div>
+                                            </div>
+                                            <div class="poltrona-filheira-3 poltrona-35">
+                                                <div>
+                                                    <span class="numero-poltrona">35</span><br>
+                                                    <span class="text-poltrona visible-lg">Poltrona</span>
+                                                    <span class="sexo-poltrona">F</span>
+                                                </div>
+                                            </div>
+                                            <div class="poltrona-filheira-3 poltrona-36">
+                                                <div>
+                                                    <span class="numero-poltrona">36</span><br>
+                                                    <span class="text-poltrona visible-lg">Poltrona</span>
+                                                    <span class="sexo-poltrona">F</span>
+                                                </div>
+                                            </div>
+                                            <div class="poltrona-filheira-4 poltrona-37">
+                                                <div>
+                                                    <span class="numero-poltrona">37</span><br>
+                                                    <span class="text-poltrona visible-lg">Poltrona</span>
+                                                    <span class="sexo-poltrona">F</span>
+                                                </div>
+                                            </div>
+                                            <div class="poltrona-filheira-4 poltrona-38">
+                                                <div>
+                                                    <span class="numero-poltrona">38</span><br>
+                                                    <span class="text-poltrona visible-lg">Poltrona</span>
+                                                    <span class="sexo-poltrona">F</span>
+                                                </div>
+                                            </div>
+                                            <div class="poltrona-filheira-4 poltrona-39">
+                                                <div>
+                                                    <span class="numero-poltrona">39</span><br>
+                                                    <span class="text-poltrona visible-lg">Poltrona</span>
+                                                    <span class="sexo-poltrona">F</span>
+                                                </div>
+                                            </div>
+                                            <div class="poltrona-filheira-4 poltrona-40">
+                                                <div>
+                                                    <span class="numero-poltrona">40</span><br>
+                                                    <span class="text-poltrona visible-lg">Poltrona</span>
+                                                    <span class="sexo-poltrona">F</span>
+                                                </div>
+                                            </div>
+                                            <div class="poltrona-filheira-4 poltrona-41">
+                                                <div>
+                                                    <span class="numero-poltrona">41</span><br>
+                                                    <span class="text-poltrona visible-lg">Poltrona</span>
+                                                    <span class="sexo-poltrona">F</span>
+                                                </div>
+                                            </div>
+                                            <div class="poltrona-filheira-4 poltrona-42">
+                                                <div>
+                                                    <span class="numero-poltrona">42</span><br>
+                                                    <span class="text-poltrona visible-lg">Poltrona</span>
+                                                    <span class="sexo-poltrona">F</span>
+                                                </div>
+                                            </div>
+                                            <div class="poltrona-filheira-4 poltrona-43">
+                                                <div>
+                                                    <span class="numero-poltrona">43</span><br>
+                                                    <span class="text-poltrona visible-lg">Poltrona</span>
+                                                    <span class="sexo-poltrona">F</span>
+                                                </div>
+                                            </div>
+                                            <div class="poltrona-filheira-4 poltrona-44">
+                                                <div>
+                                                    <span class="numero-poltrona">44</span><br>
+                                                    <span class="text-poltrona visible-lg">Poltrona</span>
+                                                    <span class="sexo-poltrona">F</span>
+                                                </div>
+                                            </div>
+                                            <div class="poltrona-filheira-4 poltrona-45">
+                                                <div>
+                                                    <span class="numero-poltrona">45</span><br>
+                                                    <span class="text-poltrona visible-lg">Poltrona</span>
+                                                    <span class="sexo-poltrona">F</span>
+                                                </div>
+                                            </div>
+                                            <div class="poltrona-filheira-4 poltrona-46">
+                                                <div>
+                                                    <span class="numero-poltrona">46</span><br>
+                                                    <span class="text-poltrona visible-lg">Poltrona</span>
+                                                    <span class="sexo-poltrona">F</span>
+                                                </div>
+                                            </div>
+                                            <div class="poltrona-filheira-4 poltrona-47">
+                                                <div>
+                                                    <span class="numero-poltrona">47</span><br>
+                                                    <span class="text-poltrona visible-lg">Poltrona</span>
+                                                    <span class="sexo-poltrona">F</span>
+                                                </div>
+                                            </div>
+                                            <div class="poltrona-filheira-4 poltrona-48">
+                                                <div>
+                                                    <span class="numero-poltrona">48</span><br>
+                                                    <span class="text-poltrona visible-lg">Poltrona</span>
+                                                    <span class="sexo-poltrona">F</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>  
+                                    <div class="form-onibus col-sm-6 col-md-12 col-lg-12">
+                                        <div class="card">
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <form action="">
+                                                        <div class="form-group col-sm-6">
+                                                            <label for="" class="control-label">Linha</label>
+                                                            <select class="form-control">
+                                                                <option>Selecione</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="form-group col-sm-6">
+                                                            <label for="" class="control-label">Veículo</label>
+                                                            <select class="form-control">
+                                                                <option>Selecione</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="form-group col-sm-6">
+                                                            <label for="" class="control-label">Motorista</label>
+                                                            <select class="form-control">
+                                                                <option>Selecione</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="form-group col-sm-3">
+                                                            <label for="" class="control-label origatorio">Data</label>
+                                                            <input type="text" class="form-control" id="" name="" placeholder="">
+                                                        </div> 
+                                                        <div class="form-group col-sm-3">
+                                                            <label for="" class="control-label origatorio">Valor da Passagem</label>
+                                                            <input type="text" class="form-control" id="" name="" placeholder="">
+                                                        </div>    
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>                                    
+                                    </div>                  
+                                </div>
+                                <div class="row">
+
+
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+            </div>
+            <div class="clearfix"></div>        
+        </div>
+    </div>    
+    <div class="modal fade in" id="modal_poltrona" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel"> Abrir Caixa</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="card-body">
+                        <div id="demo-map">
+                            <form enctype="multipart/form-data">
+                                <div class="row">
+                                    <div class="form-group col-sm-4">
+                                        <label for="" class="control-label origatorio">Caixa</label>
+                                        <input type="text" class="form-control" id="" name="" placeholder="Caixa">
+                                    </div>
+                                    <div class="form-group col-sm-4">
+                                        <label for="" class="control-label origatorio">Data/Hora</label>
+                                        <input type="text" class="form-control" id="" name="" placeholder="Data/Hora">
+                                    </div>
+                                    <div class="form-group col-sm-4">
+                                        <label for="" class="control-label origatorio">Saldo Inicial</label>
+                                        <input type="text" class="form-control" id="" name="" placeholder="Saldo Inicial">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="btn-enviar">Salvar</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal" id="btn-cancelar">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/sweetalert.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
+    <!-- <script src="js/jquery.rwdImageMaps.min.js"></script> -->
+    <!-- <script src="js/jquery.imagemapster.js"></script> -->
+<!--     <script type="text/javascript">
+        $('img[usemap]').rwdImageMaps();
+        $('#mapa').mapster ();
+    </script> -->
+
+
+</body>
+
+</html>

@@ -1,0 +1,143 @@
+/*Cores POsitiva*/
+
+.main-sidebar {
+    background-color: #003b56;
+}
+
+.main-header .navbar {
+    background-color: #0081ce;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #0080cd;
+    border-color: transparent;
+}
+
+.btn-primary:hover, .btn-primary.focus, .btn-primary:active {
+    background-color: #00629d;
+}
+
+.tabela-container .actions {
+    background: #791c1e;
+}
+.tabela-container .actions .btn-default {
+    background-color: #791c1e;
+}
+.tabela-container .actions .active a {
+    background-color: #a03537;
+}
+
+.tabela-container .actions a {
+    width: 100%
+}
+
+.tabela-container .search span {
+    background: #791c1e;
+}
+
+.tabela-container .search input, .tabela-container .search span {
+    border: 1px solid #791c1e;
+}
+
+a {
+    color: #791c1e;
+}
+
+a:hover, a:active {
+    color: #610c0e;
+}
+
+button:hover, button:active, button:focus {
+    background-color: #000;
+}
+
+.sidebar-menu>li:hover>a, .sidebar-menu>li.active>a {
+    border-color: #0081ce !important;
+}
+
+.tabela-container .pagination>.active>a, .tabela-container .pagination>.active>a:hover, .tabela-container .pagination>.active>a:focus, .tabela-container .pagination>.active>span, .tabela-container .pagination>.active>span:hover, .tabela-container .pagination>.active>span:focus {
+    background-color: #791c1e;
+    border-color: #791c1e;
+}
+
+.main-header .navbar .sidebar-toggle:hover {
+    color: #ffffff;
+    background-color:   #4b8fb7;
+}
+
+
+/*---------------- Modal ----------------*/
+
+.modal-header {
+    background-color: #b55c5e;
+}
+
+.modal-title {
+    color: white;
+}
+
+
+/*---------------- Tabela ----------------*/
+
+.tabela-add-mod table thead {
+    background: #bf6769;
+}
+
+.widget-small.info {
+    background-color: #791c1e;
+}
+
+.panel-primary>.panel-heading {
+    color: #fff;
+    background-color: #b55c5e;
+    border-color: rgb(121, 28, 30);
+}
+
+/* Legenda Passagens*/
+
+.table-legenda{
+    float: right;
+}
+
+.table-legenda div{
+    margin-left: 68px;
+}
+
+.table-legenda table{
+    border: 2px solid #cecece;
+    margin-top: 15px;
+    margin-right: 15px;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.table-legenda table thead tr th{
+    padding: 3px 9px 4px;
+    font-weight: 500;
+    border-bottom: 2px solid #cecece;
+}
+
+.table-legenda table tbody tr td{
+    padding: 5px 10px 3px;
+}
+
+.table-legenda table tbody tr td input{
+    width: 34px;
+    height: 19px;
+}
+
+.table-legenda table tbody tr td .btn-warning,.table-legenda table tbody tr td .btn-warning:hover{
+    background-color: yellow;
+}
+
+/* Titulo Usuario Passagens */
+
+.user_info{
+    padding: 0px 54px 0px;
+    font-weight: 100;
+}
+
+.rw{
+    padding: 15px 49px 0px;
+}
